@@ -21,7 +21,20 @@ public class Operations {
         set2.add("Michelle");
         set2.add("Ryan");
 
-        
+        Set<String> clonedSet1 = new LinkedHashSet<>(set1);
+        Set<String> clonedSet2 = new LinkedHashSet<>(set2);
+
+        clonedSet1.addAll(clonedSet2);
+        System.out.println("The Union of the sets would be: " + clonedSet1);
+
+        clonedSet1 = new LinkedHashSet<>(set1);
+        clonedSet1.removeAll(clonedSet2);
+        System.out.println("The Difference of the sets would be: " + clonedSet1);
+
+        clonedSet1 = new LinkedHashSet<>(set1);
+        clonedSet1.retainAll(clonedSet2);
+        System.out.println("The Intersection of the sets would be: " + clonedSet1);
+
     }
     
 }
