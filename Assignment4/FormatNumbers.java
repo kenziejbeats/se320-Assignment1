@@ -6,7 +6,7 @@ import java.text.ParseException;
 import java.util.Locale;
 
 public class FormatNumbers {
-    public static void main(String args[]){
+    public static void main(String[] args){
 
     double number = 12345.678;
     
