@@ -9,7 +9,7 @@ public class WordsFromText {
     public static void main(String[] args){
         TreeSet<String> words = new TreeSet<>();
 
-        try(BufferedReader br = new BufferedReader(new FileReader("wordsforAssignment.text"))){
+        try(BufferedReader br = new BufferedReader(new FileReader("wordsforAssignment.txt"))){
             String line;
             while ((line = br.readLine()) != null){
                 String[] word1 = line.split("\\s+");
